@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8353BB7D13B5744A00FF75B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353BB7C13B5744A00FF75B3 /* UIKit.framework */; };
+		8353BB7F13B5744A00FF75B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353BB7E13B5744A00FF75B3 /* Foundation.framework */; };
+		8353BB8113B5744A00FF75B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353BB8013B5744A00FF75B3 /* CoreGraphics.framework */; };
+		8353BB8313B5744A00FF75B3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353BB8213B5744A00FF75B3 /* CoreData.framework */; };
+		8353BB8913B5744A00FF75B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8353BB8713B5744A00FF75B3 /* InfoPlist.strings */; };
+		8353BB8C13B5744A00FF75B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8353BB8B13B5744A00FF75B3 /* main.m */; };
+		8353BB8F13B5744A00FF75B3 /* OrganisingCoreDataAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8353BB8E13B5744A00FF75B3 /* OrganisingCoreDataAppDelegate.m */; };
+		8353BB9213B5744A00FF75B3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8353BB9013B5744A00FF75B3 /* MainWindow.xib */; };
+		8353BB9513B5744A00FF75B3 /* OrganisingCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8353BB9313B5744A00FF75B3 /* OrganisingCoreData.xcdatamodeld */; };
+		8353BB9C13B5744A00FF75B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353BB7C13B5744A00FF75B3 /* UIKit.framework */; };
+		8353BB9D13B5744A00FF75B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353BB7E13B5744A00FF75B3 /* Foundation.framework */; };
+		8353BB9E13B5744A00FF75B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353BB8013B5744A00FF75B3 /* CoreGraphics.framework */; };
+		8353BB9F13B5744A00FF75B3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353BB8213B5744A00FF75B3 /* CoreData.framework */; };
+		8353BBA713B5744B00FF75B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8353BBA513B5744B00FF75B3 /* InfoPlist.strings */; };
+		8353BBAA13B5744B00FF75B3 /* OrganisingCoreDataTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 8353BBA913B5744B00FF75B3 /* OrganisingCoreDataTests.h */; };
+		8353BBAC13B5744B00FF75B3 /* OrganisingCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8353BBAB13B5744B00FF75B3 /* OrganisingCoreDataTests.m */; };
+		83B5FF0C13B5756F00EAC668 /* AddEditDVDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FEF813B5756F00EAC668 /* AddEditDVDViewController.m */; };
+		83B5FF0D13B5756F00EAC668 /* AddEditDVDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B5FEF913B5756F00EAC668 /* AddEditDVDViewController.xib */; };
+		83B5FF1013B5756F00EAC668 /* DVDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FEFE13B5756F00EAC668 /* DVDDetailViewController.m */; };
+		83B5FF1113B5756F00EAC668 /* DVDDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B5FEFF13B5756F00EAC668 /* DVDDetailViewController.xib */; };
+		83B5FF1213B5756F00EAC668 /* DVDListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FF0113B5756F00EAC668 /* DVDListTableViewController.m */; };
+		83B5FF1313B5756F00EAC668 /* ModelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FF0313B5756F00EAC668 /* ModelUtil.m */; };
+		83B5FF1413B5756F00EAC668 /* MODVD+Management.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FF0513B5756F00EAC668 /* MODVD+Management.m */; };
+		83B5FF1513B5756F00EAC668 /* MODVD.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FF0713B5756F00EAC668 /* MODVD.m */; };
+		83B5FF1613B5756F00EAC668 /* MOPerson+Management.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FF0913B5756F00EAC668 /* MOPerson+Management.m */; };
+		83B5FF1713B5756F00EAC668 /* MOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FF0B13B5756F00EAC668 /* MOPerson.m */; };
+		83B5FF2713B576C500EAC668 /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B5FF2213B576C500EAC668 /* PersonViewController.xib */; };
+		83B5FF2813B576C500EAC668 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FF2413B576C500EAC668 /* PersonViewController.m */; };
+		83B5FF2913B576C500EAC668 /* UIView+CMExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B5FF2613B576C500EAC668 /* UIView+CMExtras.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8353BBA013B5744A00FF75B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8353BB6F13B5744A00FF75B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8353BB7713B5744A00FF75B3;
+			remoteInfo = OrganisingCoreData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8353BB7813B5744A00FF75B3 /* OrganisingCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrganisingCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8353BB7C13B5744A00FF75B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8353BB7E13B5744A00FF75B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8353BB8013B5744A00FF75B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8353BB8213B5744A00FF75B3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8353BB8613B5744A00FF75B3 /* OrganisingCoreData-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrganisingCoreData-Info.plist"; sourceTree = "<group>"; };
+		8353BB8813B5744A00FF75B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8353BB8A13B5744A00FF75B3 /* OrganisingCoreData-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrganisingCoreData-Prefix.pch"; sourceTree = "<group>"; };
+		8353BB8B13B5744A00FF75B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8353BB8D13B5744A00FF75B3 /* OrganisingCoreDataAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrganisingCoreDataAppDelegate.h; sourceTree = "<group>"; };
+		8353BB8E13B5744A00FF75B3 /* OrganisingCoreDataAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganisingCoreDataAppDelegate.m; sourceTree = "<group>"; };
+		8353BB9113B5744A00FF75B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		8353BB9413B5744A00FF75B3 /* OrganisingCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrganisingCoreData.xcdatamodel; sourceTree = "<group>"; };
+		8353BB9B13B5744A00FF75B3 /* OrganisingCoreDataTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrganisingCoreDataTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8353BBA413B5744B00FF75B3 /* OrganisingCoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrganisingCoreDataTests-Info.plist"; sourceTree = "<group>"; };
+		8353BBA613B5744B00FF75B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8353BBA813B5744B00FF75B3 /* OrganisingCoreDataTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrganisingCoreDataTests-Prefix.pch"; sourceTree = "<group>"; };
+		8353BBA913B5744B00FF75B3 /* OrganisingCoreDataTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrganisingCoreDataTests.h; sourceTree = "<group>"; };
+		8353BBAB13B5744B00FF75B3 /* OrganisingCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganisingCoreDataTests.m; sourceTree = "<group>"; };
+		83B5FEF713B5756F00EAC668 /* AddEditDVDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddEditDVDViewController.h; path = Classes/AddEditDVDViewController.h; sourceTree = "<group>"; };
+		83B5FEF813B5756F00EAC668 /* AddEditDVDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddEditDVDViewController.m; path = Classes/AddEditDVDViewController.m; sourceTree = "<group>"; };
+		83B5FEF913B5756F00EAC668 /* AddEditDVDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddEditDVDViewController.xib; path = Classes/AddEditDVDViewController.xib; sourceTree = "<group>"; };
+		83B5FEFD13B5756F00EAC668 /* DVDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DVDDetailViewController.h; path = Classes/DVDDetailViewController.h; sourceTree = "<group>"; };
+		83B5FEFE13B5756F00EAC668 /* DVDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DVDDetailViewController.m; path = Classes/DVDDetailViewController.m; sourceTree = "<group>"; };
+		83B5FEFF13B5756F00EAC668 /* DVDDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DVDDetailViewController.xib; path = Classes/DVDDetailViewController.xib; sourceTree = "<group>"; };
+		83B5FF0013B5756F00EAC668 /* DVDListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DVDListTableViewController.h; path = Classes/DVDListTableViewController.h; sourceTree = "<group>"; };
+		83B5FF0113B5756F00EAC668 /* DVDListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DVDListTableViewController.m; path = Classes/DVDListTableViewController.m; sourceTree = "<group>"; };
+		83B5FF0213B5756F00EAC668 /* ModelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelUtil.h; path = Classes/ModelUtil.h; sourceTree = "<group>"; };
+		83B5FF0313B5756F00EAC668 /* ModelUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelUtil.m; path = Classes/ModelUtil.m; sourceTree = "<group>"; };
+		83B5FF0413B5756F00EAC668 /* MODVD+Management.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MODVD+Management.h"; path = "Classes/MODVD+Management.h"; sourceTree = "<group>"; };
+		83B5FF0513B5756F00EAC668 /* MODVD+Management.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MODVD+Management.m"; path = "Classes/MODVD+Management.m"; sourceTree = "<group>"; };
+		83B5FF0613B5756F00EAC668 /* MODVD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MODVD.h; path = Classes/MODVD.h; sourceTree = "<group>"; };
+		83B5FF0713B5756F00EAC668 /* MODVD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MODVD.m; path = Classes/MODVD.m; sourceTree = "<group>"; };
+		83B5FF0813B5756F00EAC668 /* MOPerson+Management.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MOPerson+Management.h"; path = "Classes/MOPerson+Management.h"; sourceTree = "<group>"; };
+		83B5FF0913B5756F00EAC668 /* MOPerson+Management.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MOPerson+Management.m"; path = "Classes/MOPerson+Management.m"; sourceTree = "<group>"; };
+		83B5FF0A13B5756F00EAC668 /* MOPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOPerson.h; path = Classes/MOPerson.h; sourceTree = "<group>"; };
+		83B5FF0B13B5756F00EAC668 /* MOPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOPerson.m; path = Classes/MOPerson.m; sourceTree = "<group>"; };
+		83B5FF2213B576C500EAC668 /* PersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PersonViewController.xib; path = Classes/PersonViewController.xib; sourceTree = "<group>"; };
+		83B5FF2313B576C500EAC668 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonViewController.h; path = Classes/PersonViewController.h; sourceTree = "<group>"; };
+		83B5FF2413B576C500EAC668 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonViewController.m; path = Classes/PersonViewController.m; sourceTree = "<group>"; };
+		83B5FF2513B576C500EAC668 /* UIView+CMExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+CMExtras.h"; path = "Classes/UIView+CMExtras.h"; sourceTree = "<group>"; };
+		83B5FF2613B576C500EAC668 /* UIView+CMExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+CMExtras.m"; path = "Classes/UIView+CMExtras.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8353BB7513B5744A00FF75B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8353BB7D13B5744A00FF75B3 /* UIKit.framework in Frameworks */,
+				8353BB7F13B5744A00FF75B3 /* Foundation.framework in Frameworks */,
+				8353BB8113B5744A00FF75B3 /* CoreGraphics.framework in Frameworks */,
+				8353BB8313B5744A00FF75B3 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8353BB9713B5744A00FF75B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8353BB9C13B5744A00FF75B3 /* UIKit.framework in Frameworks */,
+				8353BB9D13B5744A00FF75B3 /* Foundation.framework in Frameworks */,
+				8353BB9E13B5744A00FF75B3 /* CoreGraphics.framework in Frameworks */,
+				8353BB9F13B5744A00FF75B3 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8353BB6D13B5744A00FF75B3 = {
+			isa = PBXGroup;
+			children = (
+				8353BB8413B5744A00FF75B3 /* OrganisingCoreData */,
+				8353BBA213B5744A00FF75B3 /* OrganisingCoreDataTests */,
+				8353BB7B13B5744A00FF75B3 /* Frameworks */,
+				8353BB7913B5744A00FF75B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8353BB7913B5744A00FF75B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8353BB7813B5744A00FF75B3 /* OrganisingCoreData.app */,
+				8353BB9B13B5744A00FF75B3 /* OrganisingCoreDataTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8353BB7B13B5744A00FF75B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8353BB7C13B5744A00FF75B3 /* UIKit.framework */,
+				8353BB7E13B5744A00FF75B3 /* Foundation.framework */,
+				8353BB8013B5744A00FF75B3 /* CoreGraphics.framework */,
+				8353BB8213B5744A00FF75B3 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8353BB8413B5744A00FF75B3 /* OrganisingCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				83B5FF2113B575AD00EAC668 /* Model */,
+				83B5FF2013B5759400EAC668 /* View Controllers */,
+				83B5FF2A13B576D200EAC668 /* Cocoa Extensions */,
+				8353BB8D13B5744A00FF75B3 /* OrganisingCoreDataAppDelegate.h */,
+				8353BB8E13B5744A00FF75B3 /* OrganisingCoreDataAppDelegate.m */,
+				8353BB9013B5744A00FF75B3 /* MainWindow.xib */,
+				8353BB8513B5744A00FF75B3 /* Supporting Files */,
+			);
+			path = OrganisingCoreData;
+			sourceTree = "<group>";
+		};
+		8353BB8513B5744A00FF75B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8353BB8613B5744A00FF75B3 /* OrganisingCoreData-Info.plist */,
+				8353BB8713B5744A00FF75B3 /* InfoPlist.strings */,
+				8353BB8A13B5744A00FF75B3 /* OrganisingCoreData-Prefix.pch */,
+				8353BB8B13B5744A00FF75B3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8353BBA213B5744A00FF75B3 /* OrganisingCoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				8353BBA913B5744B00FF75B3 /* OrganisingCoreDataTests.h */,
+				8353BBAB13B5744B00FF75B3 /* OrganisingCoreDataTests.m */,
+				8353BBA313B5744B00FF75B3 /* Supporting Files */,
+			);
+			path = OrganisingCoreDataTests;
+			sourceTree = "<group>";
+		};
+		8353BBA313B5744B00FF75B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8353BBA413B5744B00FF75B3 /* OrganisingCoreDataTests-Info.plist */,
+				8353BBA513B5744B00FF75B3 /* InfoPlist.strings */,
+				8353BBA813B5744B00FF75B3 /* OrganisingCoreDataTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		839F882A13B57B0F00D21F46 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				83B5FF0613B5756F00EAC668 /* MODVD.h */,
+				83B5FF0713B5756F00EAC668 /* MODVD.m */,
+				83B5FF0A13B5756F00EAC668 /* MOPerson.h */,
+				83B5FF0B13B5756F00EAC668 /* MOPerson.m */,
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		83B5FF2013B5759400EAC668 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83B5FEF713B5756F00EAC668 /* AddEditDVDViewController.h */,
+				83B5FEF813B5756F00EAC668 /* AddEditDVDViewController.m */,
+				83B5FEF913B5756F00EAC668 /* AddEditDVDViewController.xib */,
+				83B5FEFD13B5756F00EAC668 /* DVDDetailViewController.h */,
+				83B5FEFE13B5756F00EAC668 /* DVDDetailViewController.m */,
+				83B5FEFF13B5756F00EAC668 /* DVDDetailViewController.xib */,
+				83B5FF0013B5756F00EAC668 /* DVDListTableViewController.h */,
+				83B5FF0113B5756F00EAC668 /* DVDListTableViewController.m */,
+				83B5FF2213B576C500EAC668 /* PersonViewController.xib */,
+				83B5FF2313B576C500EAC668 /* PersonViewController.h */,
+				83B5FF2413B576C500EAC668 /* PersonViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		83B5FF2113B575AD00EAC668 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				839F882A13B57B0F00D21F46 /* Managed Objects */,
+				8353BB9313B5744A00FF75B3 /* OrganisingCoreData.xcdatamodeld */,
+				83B5FF0213B5756F00EAC668 /* ModelUtil.h */,
+				83B5FF0313B5756F00EAC668 /* ModelUtil.m */,
+				83B5FF0413B5756F00EAC668 /* MODVD+Management.h */,
+				83B5FF0513B5756F00EAC668 /* MODVD+Management.m */,
+				83B5FF0813B5756F00EAC668 /* MOPerson+Management.h */,
+				83B5FF0913B5756F00EAC668 /* MOPerson+Management.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		83B5FF2A13B576D200EAC668 /* Cocoa Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83B5FF2513B576C500EAC668 /* UIView+CMExtras.h */,
+				83B5FF2613B576C500EAC668 /* UIView+CMExtras.m */,
+			);
+			name = "Cocoa Extensions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8353BB7713B5744A00FF75B3 /* OrganisingCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8353BBAF13B5744B00FF75B3 /* Build configuration list for PBXNativeTarget "OrganisingCoreData" */;
+			buildPhases = (
+				8353BB7413B5744A00FF75B3 /* Sources */,
+				8353BB7513B5744A00FF75B3 /* Frameworks */,
+				8353BB7613B5744A00FF75B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrganisingCoreData;
+			productName = OrganisingCoreData;
+			productReference = 8353BB7813B5744A00FF75B3 /* OrganisingCoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8353BB9A13B5744A00FF75B3 /* OrganisingCoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8353BBB213B5744B00FF75B3 /* Build configuration list for PBXNativeTarget "OrganisingCoreDataTests" */;
+			buildPhases = (
+				8353BB9613B5744A00FF75B3 /* Sources */,
+				8353BB9713B5744A00FF75B3 /* Frameworks */,
+				8353BB9813B5744A00FF75B3 /* Resources */,
+				8353BB9913B5744A00FF75B3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8353BBA113B5744A00FF75B3 /* PBXTargetDependency */,
+			);
+			name = OrganisingCoreDataTests;
+			productName = OrganisingCoreDataTests;
+			productReference = 8353BB9B13B5744A00FF75B3 /* OrganisingCoreDataTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8353BB6F13B5744A00FF75B3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 8353BB7213B5744A00FF75B3 /* Build configuration list for PBXProject "OrganisingCoreData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8353BB6D13B5744A00FF75B3;
+			productRefGroup = 8353BB7913B5744A00FF75B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8353BB7713B5744A00FF75B3 /* OrganisingCoreData */,
+				8353BB9A13B5744A00FF75B3 /* OrganisingCoreDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8353BB7613B5744A00FF75B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8353BB8913B5744A00FF75B3 /* InfoPlist.strings in Resources */,
+				8353BB9213B5744A00FF75B3 /* MainWindow.xib in Resources */,
+				83B5FF0D13B5756F00EAC668 /* AddEditDVDViewController.xib in Resources */,
+				83B5FF1113B5756F00EAC668 /* DVDDetailViewController.xib in Resources */,
+				83B5FF2713B576C500EAC668 /* PersonViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8353BB9813B5744A00FF75B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8353BBA713B5744B00FF75B3 /* InfoPlist.strings in Resources */,
+				8353BBAA13B5744B00FF75B3 /* OrganisingCoreDataTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8353BB9913B5744A00FF75B3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8353BB7413B5744A00FF75B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8353BB8C13B5744A00FF75B3 /* main.m in Sources */,
+				8353BB8F13B5744A00FF75B3 /* OrganisingCoreDataAppDelegate.m in Sources */,
+				8353BB9513B5744A00FF75B3 /* OrganisingCoreData.xcdatamodeld in Sources */,
+				83B5FF0C13B5756F00EAC668 /* AddEditDVDViewController.m in Sources */,
+				83B5FF1013B5756F00EAC668 /* DVDDetailViewController.m in Sources */,
+				83B5FF1213B5756F00EAC668 /* DVDListTableViewController.m in Sources */,
+				83B5FF1313B5756F00EAC668 /* ModelUtil.m in Sources */,
+				83B5FF1413B5756F00EAC668 /* MODVD+Management.m in Sources */,
+				83B5FF1513B5756F00EAC668 /* MODVD.m in Sources */,
+				83B5FF1613B5756F00EAC668 /* MOPerson+Management.m in Sources */,
+				83B5FF1713B5756F00EAC668 /* MOPerson.m in Sources */,
+				83B5FF2813B576C500EAC668 /* PersonViewController.m in Sources */,
+				83B5FF2913B576C500EAC668 /* UIView+CMExtras.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8353BB9613B5744A00FF75B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8353BBAC13B5744B00FF75B3 /* OrganisingCoreDataTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8353BBA113B5744A00FF75B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8353BB7713B5744A00FF75B3 /* OrganisingCoreData */;
+			targetProxy = 8353BBA013B5744A00FF75B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8353BB8713B5744A00FF75B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8353BB8813B5744A00FF75B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8353BB9013B5744A00FF75B3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8353BB9113B5744A00FF75B3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		8353BBA513B5744B00FF75B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8353BBA613B5744B00FF75B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8353BBAD13B5744B00FF75B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8353BBAE13B5744B00FF75B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		8353BBB013B5744B00FF75B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganisingCoreData/OrganisingCoreData-Prefix.pch";
+				INFOPLIST_FILE = "OrganisingCoreData/OrganisingCoreData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8353BBB113B5744B00FF75B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganisingCoreData/OrganisingCoreData-Prefix.pch";
+				INFOPLIST_FILE = "OrganisingCoreData/OrganisingCoreData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8353BBB313B5744B00FF75B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OrganisingCoreData.app/OrganisingCoreData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganisingCoreDataTests/OrganisingCoreDataTests-Prefix.pch";
+				INFOPLIST_FILE = "OrganisingCoreDataTests/OrganisingCoreDataTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8353BBB413B5744B00FF75B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OrganisingCoreData.app/OrganisingCoreData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganisingCoreDataTests/OrganisingCoreDataTests-Prefix.pch";
+				INFOPLIST_FILE = "OrganisingCoreDataTests/OrganisingCoreDataTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8353BB7213B5744A00FF75B3 /* Build configuration list for PBXProject "OrganisingCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8353BBAD13B5744B00FF75B3 /* Debug */,
+				8353BBAE13B5744B00FF75B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8353BBAF13B5744B00FF75B3 /* Build configuration list for PBXNativeTarget "OrganisingCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8353BBB013B5744B00FF75B3 /* Debug */,
+				8353BBB113B5744B00FF75B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8353BBB213B5744B00FF75B3 /* Build configuration list for PBXNativeTarget "OrganisingCoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8353BBB313B5744B00FF75B3 /* Debug */,
+				8353BBB413B5744B00FF75B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8353BB9313B5744A00FF75B3 /* OrganisingCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8353BB9413B5744A00FF75B3 /* OrganisingCoreData.xcdatamodel */,
+			);
+			currentVersion = 8353BB9413B5744A00FF75B3 /* OrganisingCoreData.xcdatamodel */;
+			path = OrganisingCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8353BB6F13B5744A00FF75B3 /* Project object */;
+}
