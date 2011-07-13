@@ -10,6 +10,8 @@ URLs
 
  * http://blog.chrismiles.info/2011/06/organising-core-data-for-ios.html
 
+ * http://blog.chrismiles.info/2011/07/core-data-debugging-with-sqlite.html
+
 
 License
 -------
